@@ -264,25 +264,33 @@
     <!------------------------------Футер----------------------->
     <footer class="footer">
       <div class="container footer-wraper">
-        <div>
+        <div class="footer-contacts-wraper">
           <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
           <address>
             <ul class="footer-list list">
               <li class="footer-item">
-                <a href="https://goo.gl/maps/K6uVQfjHcAH4xccP6" target="_blank" rel="noopener noflow noreferrer"
-                  class="address-link link">м. Київ, пр-т Лесі Українки, 26
+                <a
+                  href="https://goo.gl/maps/K6uVQfjHcAH4xccP6"
+                  target="_blank"
+                  rel="noopener noflow noreferrer"
+                  class="address-link link"
+                  >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
               <li class="footer-item">
-                <a href="mailto:info@devstudio.com" class="mail-link link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="mail-link link"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="footer-item">
-                <a href="tel:+380961111111" class="tel-link link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="tel-link link"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer-social_wraper">
           <strong class="footer-social">приєднуйтесь</strong>
           <ul class="footer-social-list">
             <li class="footer-social-item list">
@@ -314,6 +322,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-form-wraper">
+          <form action="" class="footer-form-subscription">
+            <strong class="footer-form-title">Підпишіться на розсилку</strong>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="footer-form-email"
+            />
+            <label for="email"></label>
+            <button type="submit" class="footer-form-btn">
+              <span class="footer-form-btn-tittle">Підписатися</span>
+              <svg class="footer-form-btn-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
