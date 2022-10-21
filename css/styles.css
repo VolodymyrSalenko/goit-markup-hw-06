@@ -576,7 +576,7 @@ footer .tel-link {
 .footer-form-btn{
   width: 200px;
   height: 50px;
-  background: #2196F3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -761,6 +761,7 @@ footer .tel-link {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  padding: 40px;
 
   background: var(--main-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -770,12 +771,144 @@ footer .tel-link {
 }
 
 .modal-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
   display: block;
   margin: 8px 8px auto auto;
   padding: 0;
   background-color: var(--main-background);
   border: none;
 
+  cursor: pointer;  
+}
+
+.form-service-title{
+  display: block;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--main-color);
+
+  margin-bottom: 12px;
+}
+
+.form-service-label,
+.form-service-label-textarea{
+  position: relative;
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color:var(--second-color);
+
+  margin-bottom: 10px;
+}
+
+.form-service-input,
+.form-service-textarea{
+  display: block;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding-left: 42px;
+  margin-top: 4px;
+}
+
+.form-service-svg{
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+.form-service-label-textarea{
+  margin-bottom: 20px;
+}  
+
+.form-service-textarea{
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.form-service-textarea::placeholder{
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-service-label-checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.form-service-input-checkbox{
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.form-service-checkbox{
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.form-service-checkbox-svg{
+  opacity: 0;
+}
+
+.form-service-input-checkbox:checked + .form-service-checkbox{
+  border: none;
+  background-color: var(--accent-color);
+}
+
+.form-service-input-checkbox:checked + .form-service-checkbox svg{
+  opacity: 1;
+}
+
+.form-service-checkbox-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+
+.form-service-btn{
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  display: block;
+  margin: 0 auto;
+
   cursor: pointer;
-  
+}
+
+.form-service-btn-text{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
 }
